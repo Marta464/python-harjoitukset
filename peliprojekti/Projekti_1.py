@@ -1,8 +1,11 @@
+# PROJEKTI 1: Käyttäjätiedot
 nimi = input("Anna nimesi: ")
 ikä = int(input("Anna ikä: "))
 
 print(f"Nimesi: {nimi}")
 print(f"Ikä: {ikä}")
+
+# PROJEKTI 2: Ikätarkistus ja päävalikko
 
 if ikä >= 12:
     print("Tervetuloa pelaamaan, " + nimi + "!")
