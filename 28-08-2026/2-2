@@ -1,0 +1,13 @@
+nimet = []
+
+nimi = input("Anna ensimmäinen nimi tai lopeta painamalla Enter: ")
+nimet.append(nimi) 
+  valinta = input("haluatko lisätä vau poistaa (l tai p): ")
+    if (valinta=="l" ) 
+    nimi = input("Anna seuraava nimi tai lopeta painamalla Enter: ")
+    nimet.append(nimi)
+else:
+     nimi = input("Anna poistettava nimi (tai Enter lopettaaksesi): ")
+        nimet.remove(nimi)
+
+print(nimet)

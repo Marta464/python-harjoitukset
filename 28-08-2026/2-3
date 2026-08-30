@@ -1,0 +1,11 @@
+nimet = ["Viivi", "Ahmed", "Pekka", "Olga", "Mary"]
+
+for nimi in nimet:
+    print("Moi " + nimi + "!")
+print(nimet[4])
+
+for i in range(len(nimet)):
+    print(nimet[i])
+
+ for i in range(1,11):
+    print(nimet[i])

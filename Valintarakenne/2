@@ -1,0 +1,8 @@
+ikä = int(input("Anna ikä: "))
+paino = 0
+if 15 <= ikä <18:
+ paino = float(input("Anna paino (kg): "))
+if (ikä >= 55 and ikä >= 15 ) or (ikä >= 18) :
+    print("Lääkkeen käyttö on sallittua.")
+else:
+    print("Lääkettä ei saa käyttää.")
