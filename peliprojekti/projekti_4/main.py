@@ -19,11 +19,11 @@ def main():
         return
 
 
-    with open("intro.txt", "r", encoding="utf-8") as f:
+    with open("peliprojekti/projekti_4/intro.txt", "r", encoding="utf-8") as f:
         teksti = f.read()
         print(teksti)
 
-    with open("ohjeet.txt", "r", encoding="utf-8") as f:
+    with open("peliprojekti/projekti_4/ohjet.txt", "r", encoding="utf-8") as f:
         ohje_teksti = f.read()
         print(ohje_teksti)
         
@@ -33,10 +33,10 @@ def main():
         aula = Huone("Pääula", esine=avain)
         luola = Huone("Pimeä luola", esine=miekka)
 
-        if os.path.exists("tallenna.txt"):
+        if os.path.exists("peliprojekti/projekti_4/tallenna.txt"):
             jatketaan = input("Löydettii tallennettu peli. Haluatko jatka? (kyllä/ei) : ").strip().lower()
             if jatketaan == "kyllä":
-                with open("tallenna.txt", "r", encoding="utf-8") as f:
+                with open("peliprojekti/projekti_4/tallenna.txt", "r", encoding="utf-8") as f:
                     tiedot = f.read().split(",")
                     nimi = tiedot[0]
 
@@ -52,12 +52,12 @@ def main():
             aloitus_sijainti = aula
 
         print("Tervetuloa pelaamaan, " + nimi + "!")
-        pelaaja = Pelaaja(nimi, aloitus_sijainti=aloitus_sijainti)
+        pelaaja = Pelaaja(nimi, aloitus_sijanti=aloitus_sijainti)
 
         peli_kaynnissa = True
 
         while peli_kaynnissa:
-            print(f"\n--- Påäävalikko (sijanti: {pelaaja.sijanti.nimi}) ---")
+            print(f"\n--- Påäävalikko (sijainti: {pelaaja.sijanti.nimi}) ---")
             print("Komennot: pelaa, liiku, pisteet, reppu, lopeta")
 
             komento = input ("Syötä komento: ").strip().lower()
@@ -65,7 +65,7 @@ def main():
             if komento == "lopeta":
                 with open("tallenna.txt", "w", encoding="utf-8") as f:
                     tavarat = ",".join([e.nimi for e in pelaaja.esineet])
-                    f.write(f"{pelaaja.nimi},{pelaaja.sijainti.nimi},{tavarat}")
+                    f.write(f"{pelaaja.nimi},{pelaaja.sijanti.nimi},{tavarat}")
 
                 print("Peli tallennettu!")
                 print("Kiitos pelaamisesta! Ohjelma sammu.")
@@ -76,7 +76,7 @@ def main():
                 pelaaja.keraa_esine()
 
             elif komento == "liiku":
-                if pelaaja.sijainti == aula:
+                if pelaaja.sijanti == aula:
                     pelaaja.liiku(luola)
                 else:
                     pelaaja.liiku(aula)
