@@ -1,0 +1,3 @@
+- [Tehtävä 1](mod03/tehtava1.py): Vuodenaika.
+- [Tehtävä 2](mod03/tehtava2.py): 
+- [Tehtävä 3](mod03/tehtava3.py): Lentoasemat lista.
