@@ -1,4 +1,3 @@
-
 ## Moduuli 9
 - [Tehtävä 1](mod05/tehtava1.py): Auto.
 - [Tehtävä 2](mod05/tehtava2.py): Auton nopeus.
