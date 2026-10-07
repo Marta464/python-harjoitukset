@@ -172,7 +172,7 @@ def main():
             if pelaaja.sijanti == aula and "ikituli" not in opitut_loitsut:
                 opitut_loitsut.append("ikituli")
                 print("\n[ MAAGINEN VOIMA AKTIVOITU! ]")
-                print("Linnan tulisija roiskahtaa! Opit muinaisen taian: 'Ikituli' (Вечный огонь)!")
+                print("Linnan tulisija roiskahtaa! Opit muinaisen taian: 'Ikituli'!")
                 
             elif pelaaja.sijanti == leiri and "pohjolan tulva" not in opitut_loitsut:
                 opitut_loitsut.append("pohjolan tulva")
@@ -244,12 +244,16 @@ def main():
             
             if valinta == "1":
                 pelaaja.liiku(aula)
+                print(huoneiden_kuvaukset[pelaaja.sijanti.nimi])
             elif valinta == "2":
                 pelaaja.liiku(luola)
+                print(huoneiden_kuvaukset[pelaaja.sijanti.nimi])
             elif valinta == "3":
                 pelaaja.liiku(leiri)
+                print(huoneiden_kuvaukset[pelaaja.sijanti.nimi])
             else:
                 print("Tuntematon paikka.")
+                continue
 
         elif komento == "pelasta":
             if pelaaja.sijanti != luola:

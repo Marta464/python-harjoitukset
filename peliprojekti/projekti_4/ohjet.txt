@@ -1,0 +1,14 @@
+============================================================
+PELIN SÄÄNNÖT
+=======================================================
+Tavoitteesi: Löydä Kultainen avain Pääsalista ja vie se Pimeään luolaan vapauttaaksesi lohikäärmeen!
+
+Käytettävissä olevat komennot:
+- 'liiku': Siirry toiseen paikkaan
+- 'pelaa': Etsi huone ja poimi esine
+- 'reppu': Avaa tavaraluettelosi
+- 'pisteet': Näytä nykyinen pistemääräsi
+- 'loitsu': Käytä luonnon supervoimia konnia vastaan
+- 'pelasta': Vapauta lohikäärme häkistä, kun vartijat on voitettu
+- 'lopeta': Tallenna edistymisesi ja poistu
+=========================================================
